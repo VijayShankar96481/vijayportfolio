@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- EDIT: page title (browser tab + Google results) and description -->
+    <title>Java Developer Portfolio | Vijay Shankar Prajapati</title>
+    <meta
+      name="description"
+      content="Portfolio of Vijay Shanakar, a Java developer: about me, projects, skills, certifications and contact details."
+    />
+    <meta name="theme-color" content="#262b30" />
+
+    <!-- Tab icon: a coffee cup emoji, so no extra image file is needed -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <!--
+  HOW TO CUSTOMISE THIS SITE
+  1. Replace every "Vijay Shankar Prajapati" (title above, brand in the navbar, photo caption, footer).
+  2. Each section below starts with an "EDIT:" comment that says what to change.
+  3. Put your own pictures in the images/ folder and update the file names where you see "images/".
+  4. Put your CV at files/resume.pdf (the "CV" link in the navbar opens it).
+  5. Colours and fonts live at the top of css/style.css, inside :root { ... }.
+-->
+  <body id="top">
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <!-- Icon sprite. Use an icon anywhere with: <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="0"
+      height="0"
+      style="position: absolute"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+        <path d="M12 18h.01" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+        <path d="M22 6l-10 7L2 6" />
+      </symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+        <path d="M17.5 6.5h.01" />
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24">
+        <path
+          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+        />
+        <rect x="2" y="9" width="4" height="12" />
+        <circle cx="4" cy="4" r="2" />
+      </symbol>
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <path
+          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+        />
+      </symbol>
+      <symbol id="i-award" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="7" />
+        <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12" />
+      </symbol>
+      <symbol id="i-seal" viewBox="0 0 24 24">
+        <path
+          d="M12.0 1.8L14.2 3.8L17.1 3.2L18.0 6.0L20.8 6.9L20.2 9.8L22.2 12.0L20.2 14.2L20.8 17.1L18.0 18.0L17.1 20.8L14.2 20.2L12.0 22.2L9.8 20.2L6.9 20.8L6.0 18.0L3.2 17.1L3.8 14.2L1.8 12.0L3.8 9.8L3.2 6.9L6.0 6.0L6.9 3.2L9.8 3.8Z"
+          fill="currentColor"
+          stroke="currentColor"
+          stroke-width="1.2"
+        />
+        <path
+          d="M8.2 12.2l2.7 2.7 5-5.3"
+          fill="none"
+          stroke="#fff"
+          stroke-width="2"
+        />
+      </symbol>
+    </svg>
+
+    <!-- NAVBAR. EDIT: Vijay Shankar Prajapati, and the links if you add or remove sections -->
+    <header class="site-nav">
+      <a class="brand" href="#top">Vijay Shankar Prajapati</a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span class="visually-hidden">Menu</span>
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+        <a href="files/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO. EDIT: the two lines of text. The background picture is set in css/style.css (.hero) -->
+     <!-- HERO SECTION WITH IMAGE -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image-container">
+          <img src="images/hero-title.png" alt="Vijay Shankar Prajapati - JAVA Developer" class="hero-banner-img" 
+          style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+        </div>
+      </section>
+
+      <div class="container">
+        <!-- ABOUT. EDIT: the bullet points, and the photo file name -->
+        <section class="section" id="about" aria-labelledby="about-title">
+          <h2 id="about-title">About Me</h2>
+          <div class="about-grid">
+            <ul class="star-list">
+              <p>
+                I am an enthusiastic and dedicated Bachelor of Computer
+                Application (BCA) student wtih a strong passion for backend
+                software devlopment and Java technologies, Proficient in Core
+                Java, Object-Oriented Programming(OOP) concepts, and
+                MYSQL(Learning), I enjoy my building clean, structure backend
+                logic and managing database effectively. To sharpen my logical
+                and coding skills, i am currruntly expanding my development
+                stack by learning springboot and applying my knowledge through
+                hands-on projects like a Hotel Manageent System and student
+                tracking system in the college project, utilizing Git and Github
+                for version control. I am eager to server an entry-level java
+                developer role or internship where I can apply my
+                problem-solving mindset, write efficient code, and grow
+                alongside a dynamic engineering team.
+              </p>
+            </ul>
+
+            <!-- Swap the file name for your own photo, e.g. images/profile.jpg -->
+            <img
+              class="about-photo"
+              src="images/profile.jpg"
+              alt="Portrait of Vijay Shankar Prajapati"
+              width="600"
+              height="600"
+            />
+          </div>
+        </section>
+
+        <!-- PROJECTS. EDIT: one <li> per project. The card text shows on the page; the <template> is the pop-up -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+          <h2 id="projects-title">Projects</h2>
+          <p class="lead">Click on each project to know more</p>
+
+          <ul class="project-grid">
+            <li>
+              <button
+                class="project-card"
+                type="button"
+                data-project="project-1"
+              >
+                <span class="project-media">
+                  <span class="project-name">Hotel Management System</span>
+                  <span class="project-tag">SQL Lite & Python </span>
+                </span>
+                <span class="project-more">Know More »</span>
+              </button>
+              <template id="project-1">
+                <h3>Hotel Management System</h3>
+                <p>
+                  A web-based backend system designed for managing hotel
+                  bookings, room categories, customer records, and automated
+                  billing generation.
+                </p>
+                <dl class="facts">
+                  <div>
+                    <dt>Role</dt>
+                    <dd>Java Backend Developer</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>2026</dd>
+                  </div>
+                  <div>
+                    <dt>Tech stack</dt>
+                    <dd>
+                      Java 17, Python 3.11+ Flask, Flask-Login, Flask-SQLAlchemy SQLite (file-based hotel.db) Bootstrap 5 for styling
+                    </dd>
+                  </div>
+                </dl>
+                <h4>Key Features & Contributions</h4>
+                <ul>
+                  <li>
+                    Designed RESTful endpoints for booking rooms, updating
+                    check-ins, and generating receipts.
+                  </li>
+                  <li>
+                    Implemented Hibernate and JPA for relational database
+                    mapping with MySQL.
+                  </li>
+                  <li>Tested and validated API responses using Postman.</li>
+                </ul>
+                <a
+                  class="btn"
+                  href="https://github.com/VijayShankar96481/Hotel-Management-System.git"
+                  target="_blank"
+                  rel="noopener"
+                  >View on GitHub</a
+                >
+              </template>
+            </li>
+
+            <li>
+              <button
+                class="project-card"
+                type="button"
+                data-project="project-2"
+              >
+                <span class="project-media">
+                  <span class="project-name">Project Two</span>
+                  <span class="project-tag">Project Ongoing </span>
+                </span>
+                <span class="project-more">Know More »</span>
+              </button>
+              <template id="project-2">
+                <h3>Project Two</h3>
+                <p>
+                  Service that connects the platform to external payment
+                  providers and reports the result of every transaction back to
+                  the customer. Replace this text with your own summary.
+                </p>
+                <dl class="facts">
+                  <div>
+                    <dt>Role</dt>
+                    <dd>Senior Java Developer</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>2021 to 2023</dd>
+                  </div>
+                  <div>
+                    <dt>Tech stack</dt>
+                    <dd>Java 11, Apache Camel, ActiveMQ, Hibernate, Oracle</dd>
+                  </div>
+                </dl>
+                <h4>What I did</h4>
+                <ul>
+                  <li>
+                    Designed message-driven integrations between the platform
+                    and payment gateways.
+                  </li>
+                  <li>
+                    Added retry and error-handling rules so failed payments were
+                    never lost.
+                  </li>
+                  <li>Reviewed code and mentored two junior developers.</li>
+                </ul>
+                <a
+                  class="btn"
+                  href="https://github.com/your-username"
+                  target="_blank"
+                  rel="noopener"
+                  >View on GitHub</a
+                >
+              </template>
+            </li>
+
+            <li>
+              <button
+                class="project-card"
+                type="button"
+                data-project="project-3"
+              >
+                <span class="project-media">
+                  <span class="project-name">Project Three </span>
+                  <span class="project-tag">Project Ongoing</span>
+                </span>
+                <span class="project-more">Know More »</span>
+              </button>
+              <template id="project-3">
+                <h3>Project Three</h3>
+                <p>
+                  Dashboard that turns raw billing data into daily and monthly
+                  reports for finance teams. Replace this text with your own
+                  summary.
+                </p>
+                <dl class="facts">
+                  <div>
+                    <dt>Role</dt>
+                    <dd>Java Developer</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>2019 to 2021</dd>
+                  </div>
+                  <div>
+                    <dt>Tech stack</dt>
+                    <dd>Java 8, Spring MVC, SQL, JavaScript, HTML5, CSS3</dd>
+                  </div>
+                </dl>
+                <h4>What I did</h4>
+                <ul>
+                  <li>
+                    Wrote the batch jobs that prepare the report data every
+                    night.
+                  </li>
+                  <li>
+                    Tuned slow SQL queries, cutting report load time
+                    significantly.
+                  </li>
+                  <li>
+                    Built the web screens for filtering and exporting reports.
+                  </li>
+                </ul>
+                <a
+                  class="btn"
+                  href="https://github.com/your-username"
+                  target="_blank"
+                  rel="noopener"
+                  >View on GitHub</a
+                >
+              </template>
+            </li>
+          </ul>
+        </section>
+
+        <!-- SKILLS. EDIT: the name, and the number after --level (0 to 100). Add or delete whole <li> lines freely -->
+        <section class="section" id="skills" aria-labelledby="skills-title">
+          <h2 id="skills-title">Skill Set</h2>
+          <ul class="skills">
+            <li class="skill" style="--level: 98">
+              <span class="skill-fill">Core Java</span>
+            </li>
+            <li class="skill" style="--level: 92">
+              <span class="skill-fill">Java</span>
+            </li>
+            <li class="skill" style="--level: 90">
+              <span class="skill-fill">Spring Boot (Learning)</span>
+            </li>
+            <li class="skill" style="--level: 88">
+              <span class="skill-fill">HTML5</span>
+            </li>
+            <li class="skill" style="--level: 88">
+              <span class="skill-fill">MySQL</span>
+            </li>
+          
+            <li class="skill" style="--level: 80">
+              <span class="skill-fill">Apache Camel (Learning)</span>
+            </li>
+            <li class="skill" style="--level: 80">
+              <span class="skill-fill">Git and GitHub</span>
+            </li>
+            <li class="skill" style="--level: 75">
+              <span class="skill-fill">CSS 3</span>
+            </li>
+           
+    
+            <li class="skill" style="--level: 62">
+              <span class="skill-fill">C/C++ (Basic)</span>
+            </li>
+            <li class="skill" style="--level: 45">
+              <span class="skill-fill">Docker (Learning)</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- CERTIFICATIONS AND AWARDS. EDIT: the text of each <li>. The number in an award is how many times you won it -->
+        <section
+          class="section"
+          id="certifications"
+          aria-labelledby="certifications-title"
+        >
+          <h2 id="certifications-title">Certifications &amp; Awards</h2>
+
+          <div class="panel-row">
+            <div class="panel">
+              <h3 class="panel-head">Certifications</h3>
+              <ul class="panel-list">
+               <li>
+    <svg class="icon icon-seal" aria-hidden="true"><use href="#i-seal" /></svg>
+    <span>
+      <a href="https://pwskills.com/learn/certificate/c2e24947-62f7-4546-b236-d8640aa75ba1/?utm_source=MoEngage" target="_blank" rel="noopener">
+        Software Testing Bootcamp (Issued by: PW Skills)
+      </a>
+    </span>
+  </li>
+  <li>
+    <svg class="icon icon-seal" aria-hidden="true"><use href="#i-seal" /></svg>
+    <span>
+      <a href="https://learn.microsoft.com/en-gb/users/vijayshankarprajapati-9673/?tab=tab-modules#badges-section" target="_blank" rel="noopener">
+        Generative AI &amp; Productivity Badges | Microsoft Learn (Oct 2026)
+      </a>
+    </span>
+  </li>
+  <li>
+    <svg class="icon icon-seal" aria-hidden="true"><use href="#i-seal" /></svg>
+    <span>
+      <a href="https://learn.microsoft.com/en-gb/users/vijayshankarprajapati-9673/" target="_blank" rel="noopener">
+        Java &amp; Backend Development Modules | Microsoft Learn (Oct 2026)
+      </a>
+    </span>
+  </li>
+ 
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3 class="panel-head">Coding Milestones</h3>
+              <ul class="panel-list awards">
+                <li>
+                  <svg class="icon icon-award" aria-hidden="true">
+                    <use href="#i-award" /></svg
+                  ><span>Solved 150+ DSA Problems on LeetCode</span
+                  ><span class="badge"
+                    >1<span class="visually-hidden"> times</span></span
+                  >
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT. EDIT: phone number, email address and the three profile links -->
+        <section class="section" id="contact" aria-labelledby="contact-title">
+          <h2 id="contact-title">Contact Me</h2>
+
+          <dl class="contact-list">
+            <div class="contact-row">
+              <dt>Text me on:</dt>
+              <dd>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-phone" /></svg
+                ><a href="tel:+910000000000">+91 9648116380</a>
+              </dd>
+            </div>
+            <div class="contact-row">
+              <dt>Write to me at:</dt>
+              <dd>
+                <svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg
+                ><a href="mailto:you@example.com">hello.vijayprajapati@gmail.com</a>
+              </dd>
+            </div>
+            <div class="contact-row">
+              <dt>Follow me on:</dt>
+              <dd class="social">
+                
+                <a
+                  href="https://www.linkedin.com/in/vijayshankar964811/?isSelfProfile=true"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="#i-linkedin" /></svg
+                ></a>
+                <a
+                  href="https://github.com/VijayShankar96481"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub"
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="#i-github" /></svg
+                ></a>
+              </dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER. EDIT: Vijay Shankar Prajapati, and the same email and profile links as above -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Vijay Shankar Prajapati</p>
+        <ul class="footer-icons">
+          <li>
+            <a href="hello.vijayprajapati@gmail.com" aria-label="Email"
+              ><svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg
+            ></a>
+          </li>
+         
+          <li>
+            <a
+              href="https://www.linkedin.com/in/vijayshankar964811/?isSelfProfile=true"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#i-linkedin" /></svg
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/VijayShankar96481"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#i-github" /></svg
+            ></a>
+          </li>
+        </ul>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <!-- Project pop-up. Filled by js/script.js from the <template> of the card you click -->
+    <dialog class="dialog" id="project-dialog" aria-label="Project details">
+      <div class="dialog-bar">
+        <button
+          class="dialog-close"
+          type="button"
+          aria-label="Close project details"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="dialog-body"></div>
+    </dialog>
+  </body>
+</html>
