@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- EDIT: page title (browser tab + Google results) and description -->
     <title>Java Developer Portfolio | Vijay Shankar Prajapati</title>
     <meta
       name="description"
@@ -12,7 +11,6 @@
     />
     <meta name="theme-color" content="#262b30" />
 
-    <!-- Tab icon: a coffee cup emoji, so no extra image file is needed -->
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E"
@@ -22,18 +20,9 @@
     <script src="js/script.js" defer></script>
   </head>
 
-  <!--
-  HOW TO CUSTOMISE THIS SITE
-  1. Replace every "Vijay Shankar Prajapati" (title above, brand in the navbar, photo caption, footer).
-  2. Each section below starts with an "EDIT:" comment that says what to change.
-  3. Put your own pictures in the images/ folder and update the file names where you see "images/".
-  4. Put your CV at files/resume.pdf (the "CV" link in the navbar opens it).
-  5. Colours and fonts live at the top of css/style.css, inside :root { ... }.
--->
   <body id="top">
     <a class="skip-link" href="#about">Skip to content</a>
 
-    <!-- Icon sprite. Use an icon anywhere with: <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> -->
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="0"
@@ -113,11 +102,21 @@
 
     <main>
       <!-- HERO. EDIT: the two lines of text. The background picture is set in css/style.css (.hero) -->
-     <!-- HERO SECTION WITH IMAGE -->
+      <!-- HERO SECTION WITH IMAGE -->
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-image-container">
-          <img src="images/hero-title.png" alt="Vijay Shankar Prajapati - JAVA Developer" class="hero-banner-img" 
-          style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+          <img
+            src="images/hero-title.png"
+            alt="Vijay Shankar Prajapati - JAVA Developer"
+            class="hero-banner-img"
+            loading="lazy"
+            style="
+              max-width: 100%;
+              height: auto;
+              display: block;
+              margin: 0 auto;
+            "
+          />
         </div>
       </section>
 
@@ -152,6 +151,7 @@
               alt="Portrait of Vijay Shankar Prajapati"
               width="600"
               height="600"
+              loading="lazy"
             />
           </div>
         </section>
@@ -193,7 +193,8 @@
                   <div>
                     <dt>Tech stack</dt>
                     <dd>
-                      Java 17, Python 3.11+ Flask, Flask-Login, Flask-SQLAlchemy SQLite (file-based hotel.db) Bootstrap 5 for styling
+                      Java 17, Python 3.11+ Flask, Flask-Login, Flask-SQLAlchemy
+                      SQLite (file-based hotel.db) Bootstrap 5 for styling
                     </dd>
                   </div>
                 </dl>
@@ -352,7 +353,7 @@
             <li class="skill" style="--level: 88">
               <span class="skill-fill">MySQL</span>
             </li>
-          
+
             <li class="skill" style="--level: 80">
               <span class="skill-fill">Apache Camel (Learning)</span>
             </li>
@@ -362,8 +363,7 @@
             <li class="skill" style="--level: 75">
               <span class="skill-fill">CSS 3</span>
             </li>
-           
-    
+
             <li class="skill" style="--level: 62">
               <span class="skill-fill">C/C++ (Basic)</span>
             </li>
@@ -385,31 +385,50 @@
             <div class="panel">
               <h3 class="panel-head">Certifications</h3>
               <ul class="panel-list">
-               <li>
-    <svg class="icon icon-seal" aria-hidden="true"><use href="#i-seal" /></svg>
-    <span>
-      <a href="https://pwskills.com/learn/certificate/c2e24947-62f7-4546-b236-d8640aa75ba1/?utm_source=MoEngage" target="_blank" rel="noopener">
-        Software Testing Bootcamp (Issued by: PW Skills)
-      </a>
-    </span>
-  </li>
-  <li>
-    <svg class="icon icon-seal" aria-hidden="true"><use href="#i-seal" /></svg>
-    <span>
-      <a href="https://learn.microsoft.com/en-gb/users/vijayshankarprajapati-9673/?tab=tab-modules#badges-section" target="_blank" rel="noopener">
-        Generative AI &amp; Productivity Badges | Microsoft Learn (Oct 2026)
-      </a>
-    </span>
-  </li>
-  <li>
-    <svg class="icon icon-seal" aria-hidden="true"><use href="#i-seal" /></svg>
-    <span>
-      <a href="https://learn.microsoft.com/en-gb/users/vijayshankarprajapati-9673/" target="_blank" rel="noopener">
-        Java &amp; Backend Development Modules | Microsoft Learn (Oct 2026)
-      </a>
-    </span>
-  </li>
- 
+                <li>
+                  <svg class="icon icon-seal" aria-hidden="true">
+                    <use href="#i-seal" />
+                  </svg>
+                  <span>
+                    <a
+                      href="https://pwskills.com/learn/certificate/c2e24947-62f7-4546-b236-d8640aa75ba1/?utm_source=MoEngage"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Software Testing Bootcamp (Issued by: PW Skills)
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <svg class="icon icon-seal" aria-hidden="true">
+                    <use href="#i-seal" />
+                  </svg>
+                  <span>
+                    <a
+                      href="https://learn.microsoft.com/en-gb/users/vijayshankarprajapati-9673/?tab=tab-modules#badges-section"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Generative AI &amp; Productivity Badges | Microsoft Learn
+                      (Oct 2026)
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <svg class="icon icon-seal" aria-hidden="true">
+                    <use href="#i-seal" />
+                  </svg>
+                  <span>
+                    <a
+                      href="https://learn.microsoft.com/en-gb/users/vijayshankarprajapati-9673/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Java &amp; Backend Development Modules | Microsoft Learn
+                      (Oct 2026)
+                    </a>
+                  </span>
+                </li>
               </ul>
             </div>
 
@@ -424,7 +443,6 @@
                     >1<span class="visually-hidden"> times</span></span
                   >
                 </li>
-               
               </ul>
             </div>
           </div>
@@ -447,13 +465,14 @@
               <dt>Write to me at:</dt>
               <dd>
                 <svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg
-                ><a href="mailto:you@example.com">hello.vijayprajapati@gmail.com</a>
+                ><a href="mailto:you@example.com"
+                  >hello.vijayprajapati@gmail.com</a
+                >
               </dd>
             </div>
             <div class="contact-row">
               <dt>Follow me on:</dt>
               <dd class="social">
-                
                 <a
                   href="https://www.linkedin.com/in/vijayshankar964811/?isSelfProfile=true"
                   target="_blank"
@@ -487,7 +506,7 @@
               ><svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg
             ></a>
           </li>
-         
+
           <li>
             <a
               href="https://www.linkedin.com/in/vijayshankar964811/?isSelfProfile=true"
